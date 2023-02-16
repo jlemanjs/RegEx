@@ -23,3 +23,6 @@ $0non+ADs-
 
 
               '<td style=\\"padding: 8px 16px; text-align: left; border-bottom: 1px solid #153843; overflow-wrap: break-word;\\">\\s*Product C\\s*</td>\\s*<td style=\\"padding: 8px 16px; text-align: left; border-bottom: 1px solid #153843; overflow-wrap: break-word;\\">\\s*</td>',
+
+
+color: #f4664f">((?!<\/tr))*Product((?!<\/tr))*<\/tr
