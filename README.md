@@ -26,3 +26,12 @@ $0non+ADs-
 
 
 color: #f4664f">((?!<\/tr))*Product((?!<\/tr))*<\/tr
+
+
+## Rechercher un bout de code similaire à 
+
+curr.id !== row.id &&
+          curr.productReference === row.productReference &&
+          (!curr.batchId || curr.batchId === row.batchId)
+
+\s*\w*[.]id\s*!==\s*\w*.id\s*&&\s*\w*.\w*eference\s*===\s*\w*.\w*eference\s*&&\s*\(!\w*.batchId\s*\|\|\s*\w*.batchId\s*===\s*\w*.batchId\s*\)
