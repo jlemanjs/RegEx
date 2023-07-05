@@ -35,3 +35,9 @@ curr.id !== row.id &&
           (!curr.batchId || curr.batchId === row.batchId)
 
 \s*\w*[.]id\s*!==\s*\w*.id\s*&&\s*\w*.\w*eference\s*===\s*\w*.\w*eference\s*&&\s*\(!\w*.batchId\s*\|\|\s*\w*.batchId\s*===\s*\w*.batchId\s*\)
+
+## Recherche SELECT content 
+
+SELECT(((?!FROM).)*)FROM
+
+/SELECT(((?!FROM).)*)FROM/gm
