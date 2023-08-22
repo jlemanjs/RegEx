@@ -41,3 +41,20 @@ curr.id !== row.id &&
 SELECT(((?!FROM).)*)FROM
 
 /SELECT(((?!FROM).)*)FROM/gm
+
+
+\)\s*\.end.*\W*try \{
+
+
+8-62	)
+        .end((error, response) => {
+          try {
+
+done\(\);\W*catch \(expectError\)\W*done\(expectError\);\s*\}\s*\}\);
+
+
+229-325	done();
+          } catch (expectError) {
+            done(expectError);
+          }
+        });
