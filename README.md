@@ -58,3 +58,15 @@ done\(\);\W*catch \(expectError\)\W*done\(expectError\);\s*\}\s*\}\);
             done(expectError);
           }
         });
+
+
+\.expect\((\d*), done\)
+
+
+75-93	.expect(401, done)
+83-86	401
+
+;\nexpect(response.status).toBe($1)
+
+\);\n[\t ]*\n[\t ]*expect
+
