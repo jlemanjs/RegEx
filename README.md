@@ -70,3 +70,10 @@ done\(\);\W*catch \(expectError\)\W*done\(expectError\);\s*\}\s*\}\);
 
 \);\n[\t ]*\n[\t ]*expect
 
+
+Replace for add auto fieldNames:
+\$\{sv\}\."(\w*)"
+
+${sv}."${StockViewFieldNames.$1}"
+
+
