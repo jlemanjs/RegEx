@@ -77,3 +77,7 @@ Replace for add auto fieldNames:
 ${sv}."${StockViewFieldNames.$1}"
 
 
+@ApiProperty([^\}]*)\}\)
+
+Better version : 
+@ApiProperty\(\{([^\}]|\n)*\}\)
