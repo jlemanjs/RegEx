@@ -71,7 +71,7 @@ done\(\);\W*catch \(expectError\)\W*done\(expectError\);\s*\}\s*\}\);
 \);\n[\t ]*\n[\t ]*expect
 
 
-Replace for add auto fieldNames:
+## Replace for add auto fieldNames:
 \$\{sv\}\."(\w*)"
 
 ${sv}."${StockViewFieldNames.$1}"
@@ -81,3 +81,14 @@ ${sv}."${StockViewFieldNames.$1}"
 
 Better version : 
 @ApiProperty\(\{([^\}]|\n)*\}\)
+
+
+## Found the last number collumn of a csv file
+
+(,[0-9]*\n)
+
+can be replace by
+
+,1\n
+
+for have 1 instead of existing value
