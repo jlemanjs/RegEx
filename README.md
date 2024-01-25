@@ -92,3 +92,14 @@ can be replace by
 ,1\n
 
 for have 1 instead of existing value
+
+## Replace in code
+
+await queryRunner\.query\(`ALTER TABLE "([a-zA-Z_]*)" DROP COLUMN "([a-zA-Z_]*)"`\);
+
+can be replaced by:
+await this.convertDatesToDatesWithTimezone('$1', '$2', queryRunner);
+
+
+await queryRunner\.query\(\W*`ALTER TABLE "([a-zA-Z_]*)" ADD "([a-zA-Z_]*)" [A-Z ()]*`\W*\);\n
+Can be replace by nothing
