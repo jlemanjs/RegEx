@@ -103,3 +103,11 @@ await this.convertDatesToDatesWithTimezone('$1', '$2', queryRunner);
 
 await queryRunner\.query\(\W*`ALTER TABLE "([a-zA-Z_]*)" ADD "([a-zA-Z_]*)" [A-Z ()]*`\W*\);\n
 Can be replace by nothing
+
+## Replace xxx={1} by xxx="1"
+
+([a-zA-Z]*)={([0-9]*)}
+
+can be replace by
+
+$1="$2"
